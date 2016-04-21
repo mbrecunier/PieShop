@@ -7,10 +7,59 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.guest.laurettajean.MainActivity">
+    tools:context="com.example.guest.laurettajean.MainActivity"
+    android:background="@color/colorPrimaryLight">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/logoImageView"
+        android:src="@drawable/ljlogo"
+        android:layout_above="@+id/mainPieImageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/mainPieImageView"
+        android:longClickable="true"
+        android:src="@drawable/fruitpieslice"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="Pies"
+        android:id="@+id/piesButton"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/locationsButton"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryLight"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="Locations"
+        android:id="@+id/locationsButton"
+        android:layout_above="@+id/aboutButton"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryLight"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="About"
+        android:id="@+id/aboutButton"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryLight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/locationsButton"
+        android:layout_alignStart="@+id/locationsButton"
+        android:layout_marginTop="10dp" />
+
+
 </RelativeLayout>
