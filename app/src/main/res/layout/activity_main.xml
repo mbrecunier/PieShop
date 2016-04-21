@@ -11,12 +11,13 @@
     android:background="@color/colorPrimaryLight">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/logoImageView"
         android:src="@drawable/ljlogo"
         android:layout_above="@+id/mainPieImageView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -27,38 +28,39 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-        android:text="Pies"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIES"
         android:id="@+id/piesButton"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/locationsButton"
-        android:background="@color/colorPrimaryDark"
-        android:textColor="@color/colorPrimaryLight"
-        android:layout_marginTop="10dp" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textSize="35sp" />
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-        android:text="Locations"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOCATIONS"
         android:id="@+id/locationsButton"
         android:layout_above="@+id/aboutButton"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorPrimaryDark"
-        android:textColor="@color/colorPrimaryLight"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textSize="35sp"
         android:layout_marginTop="10dp" />
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-        android:text="About"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
         android:id="@+id/aboutButton"
-        android:background="@color/colorPrimaryDark"
-        android:textColor="@color/colorPrimaryLight"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/locationsButton"
-        android:layout_alignStart="@+id/locationsButton"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="35sp"
         android:layout_marginTop="10dp" />
 
 
