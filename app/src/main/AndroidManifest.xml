@@ -17,6 +17,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LocationsActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.guest.laurettajean.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".PiesActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.guest.laurettajean.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".AboutActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.guest.laurettajean.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
